@@ -4,7 +4,7 @@ Some notes for my gentoo setup
 ## Plymouth
 ### Fallback to text mode
 ```
-> mv /lib/udev/rules.d/71-udev-seat.rules /lib/udev/rules.d/71-seat.rules
+> ln -s /lib/udev/rules.d/71-udev-seat.rules /lib/udev/rules.d/71-seat.rules
 ```
 Turns out the seat rules were in a different file then genkernel expects them.
 
